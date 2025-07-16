@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(20, 14.3%, 4.1%);
+  --muted: hsl(60, 4.8%, 95.9%);
+  --muted-foreground: hsl(25, 5.3%, 44.7%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(20, 14.3%, 4.1%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(20, 14.3%, 4.1%);
+  --border: hsl(20, 5.9%, 90%);
+  --input: hsl(20, 5.9%, 90%);
+  --primary: hsl(144, 100%, 26%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(60, 4.8%, 95.9%);
+  --secondary-foreground: hsl(24, 9.8%, 10%);
+  --accent: hsl(144, 80%, 35%);
+  --accent-foreground: hsl(0, 0%, 100%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(144, 100%, 26%);
+  --radius: 0.5rem;
+  
+  /* Dande booking colors - Zimbabwe flag inspired */
+  --booking-primary: hsl(144, 100%, 26%);
+  --booking-secondary: hsl(144, 80%, 35%);
+  --booking-accent: hsl(144, 60%, 45%);
+  --booking-dark: hsl(144, 100%, 18%);
+  --booking-navy: hsl(221, 100%, 26%);
+  --booking-gold: hsl(51, 100%, 50%);
+  --zimbabwe-green: hsl(144, 100%, 26%);
+  --zimbabwe-red: hsl(348, 87%, 47%);
+  --zimbabwe-gold: hsl(51, 100%, 50%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(144, 100%, 26%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .bg-booking-primary {
+    background-color: var(--booking-primary);
+  }
+  
+  .bg-booking-secondary {
+    background-color: var(--booking-secondary);
+  }
+  
+  .bg-booking-accent {
+    background-color: var(--booking-accent);
+  }
+  
+  .bg-booking-dark {
+    background-color: var(--booking-dark);
+  }
+  
+  .bg-booking-navy {
+    background-color: var(--booking-navy);
+  }
+  
+  .bg-booking-gold {
+    background-color: var(--booking-gold);
+  }
+  
+  .text-booking-primary {
+    color: var(--booking-primary);
+  }
+  
+  .text-booking-secondary {
+    color: var(--booking-secondary);
+  }
+  
+  .text-booking-accent {
+    color: var(--booking-accent);
+  }
+  
+  .text-booking-dark {
+    color: var(--booking-dark);
+  }
+  
+  .text-booking-navy {
+    color: var(--booking-navy);
+  }
+  
+  .text-booking-gold {
+    color: var(--booking-gold);
+  }
+  
+  .text-zimbabwe-green {
+    color: var(--zimbabwe-green);
+  }
+  
+  .text-zimbabwe-red {
+    color: var(--zimbabwe-red);
+  }
+  
+  .text-zimbabwe-gold {
+    color: var(--zimbabwe-gold);
+  }
+  
+  .border-booking-primary {
+    border-color: var(--booking-primary);
+  }
+  
+  .hover\:bg-booking-primary:hover {
+    background-color: var(--booking-primary);
+  }
+  
+  .hover\:bg-booking-secondary:hover {
+    background-color: var(--booking-secondary);
+  }
+  
+  .hover\:bg-booking-accent:hover {
+    background-color: var(--booking-accent);
+  }
+  
+  .hover\:text-booking-gold:hover {
+    color: var(--booking-gold);
+  }
+}
